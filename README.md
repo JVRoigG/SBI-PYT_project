@@ -135,7 +135,7 @@ Otherwise, if the length of the clashes list is lower than the *number_clashes* 
 Notice, that the ***get_best_core*** function reduces the computational cost since, all the files which can add some chain to the macro-complex model will be selected probably first.
 
 Once ***BioBuilder*** has iterate through all the PDB files, two scenarios can take place: 1. The macro-complex have achieved the number of chains defined on the *stoichiometry* argument. 2. Any file is able to add a new chain to the macro-complex since all chains are already added. In both scenarios, the ***BioBuilder*** function finishes returning a structure object containing the macro-complex and it will be stored in a *.pdb* or *.cif* file according to the macro-complex size.
-
+Finally, as an extra, **BioMaBuilder** generates also a *.txt* file with all the alignments among the sequences provides in the fasta file.
 
 ## 5. Limitations
 
@@ -149,6 +149,7 @@ BioMaBuilder requires the following python modules and packages:
 •	Sys module
 •	Os module
 •	Re module
+•	Pairwise module
 
 For further visualization of macro-complex you can use Chimera, ICM, or PyMol.
 
